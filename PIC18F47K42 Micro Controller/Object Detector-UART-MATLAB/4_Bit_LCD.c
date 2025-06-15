@@ -1,7 +1,6 @@
 //------------------------------------------------------------------------------
 // File     : lcd.c
 // Author   : Umar Wahid
-// Date     : May 2025
 // MCU      : PIC18F47K42
 // Compiler : MPLAB X IDE v6.2, XC8
 //------------------------------------------------------------------------------
@@ -16,22 +15,11 @@
 //   4-bit mode reduces the number of required data lines by sending data 
 //   in two 4-bit nibbles (high nibble first, then low nibble).
 //
-// Functions:
-//   - LCD_Init()          : Initializes LCD in 4-bit mode
-//   - LCD_Command(cmd)    : Sends a command to the LCD
-//   - LCD_Char(data)      : Sends a single character
-//   - LCD_String(msg)     : Displays a string
-//   - LCD_String_xy(row, col, msg): Displays a string at a specific position
-//   - LCD_Set_Cursor(row, col): Sets the cursor to a specific location
-//   - LCD_Clear()         : Clears the display
-//   - MSdelay(ms)         : Simple blocking delay function
-//
 // Notes:
 //   - This implementation assumes LATD, LATC, and TRISD/ANSELx are configured
 //     correctly before calling LCD_Init().
 //   - `NOP()` is used for EN pulse timing (can be adjusted as needed).
 //   - Use `LCD_Command(0x0E)` to turn on cursor or `0x0F` for cursor+blink.
-//
 //------------------------------------------------------------------------------
 
 #include <xc.h>
