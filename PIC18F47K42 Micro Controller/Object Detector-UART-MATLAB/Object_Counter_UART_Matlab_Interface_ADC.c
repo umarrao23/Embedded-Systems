@@ -1,6 +1,6 @@
-//------------------------------------------------------------------------------
-// Title     : LDR-Based Object Counter with UART Output and MATLAB Interface
-//------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------
+// Title     : LDR-Based Object Counter Through ADC Conversion with UART Output and MATLAB Interface
+//----------------------------------------------------------------------------------------------------
 // Project  : LDR-Based Object Counter with Password Protection
 // MCU      : PIC18F47K42
 // Compiler : MPLAB X IDE v6.2, XC8 Compiler
@@ -129,7 +129,7 @@ void main(void) {
             LCD_Clear();
             LCD_String_xy(1, 3, "WAITTTT");  // Centered WAIT message
 
-            for (int i = 0; i < 20; i++) {  // 20 × 500ms = 10 seconds
+            for (int i = 0; i < 20; i++) {  // 20 Ã— 500ms = 10 seconds
                 RED_LED = 1;
                 __delay_ms(250);
                 
