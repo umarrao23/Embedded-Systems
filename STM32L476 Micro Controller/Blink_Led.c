@@ -91,25 +91,3 @@ int main(void)
 	}
 }
 
-
-int main(void)
-{
-
-	//1)enable clock access to GPIOA
-	RCC_AHB2EN_R |= GPIOAEN;
-
-	//2)set PA5 as outpin
-	GPIOA_MODE_R |= (1U<<10); //set bit 10 to 1
-	GPIOA_MODE_R &=~(1U<<11); //set bit 11 to 0
-
-	while(1)
-	{
-		//3)set PA5 high
-//		GPIOA_OD_R |= LED_PIN;
-
-		//4)toggle led
-		GPIOA_OD_R ^= LED_PIN; //this ^ is used to change from 0 to 1 and 1 to 0
-		for (int i=0; i<100000;i++)
-		{}
-	}
-}
