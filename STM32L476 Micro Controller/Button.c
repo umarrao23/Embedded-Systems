@@ -1,8 +1,9 @@
 //------------------------------------------------------------------
-// Title     :
+// Title     : LED Control with Push Button
 // Author    : Umar Wahid
 // Target    : STM32L4 Series Microcontroller
-// Purpose   :
+// Purpose   : Turns ON PA5 LED when button (PC13) is not pressed
+//             and turns OFF when pressed
 // Version   : 1.18.1 STM32CubeIDE
 //------------------------------------------------------------------
 
