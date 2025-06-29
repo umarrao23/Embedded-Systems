@@ -9,6 +9,9 @@
 //             - UART2 baudrate: 115200
 //             - ADC configured for continuous conversion mode
 //             - No external libraries (HAL/Cube) used
+//	       - We can change it to single conversion mode just 
+//		 by changing the bit 13 of CFGR_CONT to 0.It can be
+//		 in adc.c file
 // Version   : 1.18.1 STM32CubeIDE
 //------------------------------------------------------------------
 
