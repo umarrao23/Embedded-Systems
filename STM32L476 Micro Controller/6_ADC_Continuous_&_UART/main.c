@@ -4,12 +4,12 @@
 // Target    : STM32L476 Series Microcontroller
 // Purpose   : Reads analog input from PA4 using ADC1 Channel 9
 //             and transmits the digital value via UART2 (PA2 TX).
-// Version   : 1.18.1 (STM32CubeIDE)
 // Date      : June 21, 2025
 // Notes     : - System clock is assumed to be 4 MHz
 //             - UART2 baudrate: 115200
 //             - ADC configured for continuous conversion mode
 //             - No external libraries (HAL/Cube) used
+// Version   : 1.18.1 STM32CubeIDE
 //------------------------------------------------------------------
 
 #include <stdint.h>
