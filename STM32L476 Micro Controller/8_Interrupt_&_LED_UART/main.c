@@ -24,7 +24,6 @@
 #include <stdio.h>
 #include "stm32l4xx.h"
 #include "uart.h"
-#include "systick.h"
 #include "exti.h"
 
 #define PIN_5               (1U << 5)
