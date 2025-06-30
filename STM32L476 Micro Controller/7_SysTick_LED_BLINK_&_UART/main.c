@@ -18,7 +18,6 @@
 #include <stdio.h>
 #include "stm32l4xx.h"
 #include "uart.h"
-#include "adc.h"
 #include "systick.h"
 
 #define PIN_5               (1U << 5)
