@@ -1,11 +1,17 @@
 //------------------------------------------------------------------
-// Title     :
+// Title     : SysTick-Based LED Blinker with UART Output
 // Author    : Umar Wahid
 // Target    : STM32L476 Series Microcontroller
-// Purpose   :
+// Purpose   : Demonstrates the use of the SysTick timer to generate 
+//             precise millisecond delays. A 1-second (1000 ms) delay 
+//             is used to toggle an LED on PA5 and send a message 
+//             via UART2 every second.
 // Version   : 1.18.1 (STM32CubeIDE)
 // Date      : June 21, 2025
-// Notes     :
+// Notes     : - PA5 is configured as output to drive the onboard LED.
+//             - SysTick generates delays in milliseconds.
+//             - uart2_tx_init() sets up UART2 for transmitting text.
+//             - systickDelayMs(1000) creates a 1-second delay.
 //------------------------------------------------------------------
 
 #include <stdint.h>
